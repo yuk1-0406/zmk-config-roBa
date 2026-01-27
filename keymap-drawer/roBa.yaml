@@ -8,7 +8,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, h: SCROLL}
+  - I
   - O
   - P
   - A
@@ -16,31 +16,31 @@ layers:
   - D
   - F
   - G
-  - Sft+Gui+S
+  - ESC
   - '-'
   - H
   - J
   - K
-  - L
-  - ''''
+  - {t: '&to_layer_0 L', h: SCROLL}
+  - {t: '&to_layer_0 MINUS', h: ARROW}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
-  - ':'
+  - {t: '&to_layer_0 AT_SIGN', h: MOUSE}
   - ;
   - N
   - M
-  - ','
-  - .
+  - '&mkp MB1'
+  - '&mkp MB2'
   - /
   - LCTRL
-  - LEFT WIN
+  - {t: '&to_layer_0 LEFT_GUI', h: FUNCTION}
   - LEFT ALT
-  - {t: '&to_layer_0 INT_HENKAN', h: '6'}
+  - {t: '&to_layer_0 LANGUAGE_5', h: '6'}
   - {t: SPACE, h: NUM}
-  - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
+  - {t: '&to_layer_0 TAB', h: ARROW}
   - BACKSPACE
   - {t: ENTER, h: FUNCTION}
   - DEL
@@ -80,13 +80,13 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F12
   NUM:
   - '-'
@@ -150,11 +150,11 @@ layers:
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+TAB
+  - Ctl+S
+  - Ctl+C
+  - Ctl+V
+  - {type: held}
   - LEFT SHIFT
   - Gui+Sft+LEFT ARROW
   - {t: ▽, type: trans}
@@ -172,22 +172,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,19 +204,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SCROLL:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -242,6 +218,30 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SCROLL:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -309,13 +309,55 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR ALL
 combos:
-- p: [11, 12]
-  k: TAB
-- p: [12, 13]
-  k: Sft+TAB
-- p: [11, 10]
-  k: '&to_layer_0 INT_MUHENKAN'
-- p: [20, 21]
+- p: [5, 17]
+  k: ''''
+- p: [17, 29]
   k: '"'
-- p: [24, 25]
+- p: [6, 18]
+  k: ;
+- p: [18, 30]
+  k: ':'
+- p: [7, 19]
+  k: '|'
+- p: [19, 31]
+  k: \
+- p: [4, 14]
+  k: '~'
+- p: [14, 26]
+  k: '`'
+- p: [3, 13]
+  k: _
+- p: [13, 25]
   k: '='
+- p: [2, 12]
+  k: <
+- p: [24, 12]
+  k: '>'
+- p: [1, 11]
+  k: '!'
+- p: [11, 23]
+  k: '?'
+- p: [1, 3]
+  k: '%'
+- p: [13, 11]
+  k: $
+- p: [23, 25]
+  k: '#'
+- p: [12, 13]
+  k: (
+- p: [18, 19]
+  k: )
+- p: [3, 2]
+  k: '['
+- p: [6, 7]
+  k: ']'
+- p: [25, 24]
+  k: '{'
+- p: [30, 31]
+  k: '}'
+- p: [27, 26]
+  k: ^
+- p: [0, 10]
+  k: '&'
+- p: [10, 22]
+  k: '*'
